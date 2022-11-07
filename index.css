@@ -60,3 +60,21 @@ footer p {
 nav a:hover {
     color:rgb(203, 135, 96) ; 
 }
+
+
+@media screen and (max-width: 768px); {
+    section {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px); {
+    main {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+    

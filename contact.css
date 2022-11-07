@@ -78,3 +78,20 @@ fieldset.grupo .campo{
 .botao, select{
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px); {
+    fieldset.grupo .campo {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px); {
+    fieldset.grupo .campo {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}

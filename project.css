@@ -34,6 +34,20 @@ body {
     display: block;
 }
 
+@media screen and (max-width: 768px); {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+}
 
+
+@media screen and (max-width: 600px); {
+    header {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
 
 
