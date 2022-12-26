@@ -1,72 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wendy Gutierrez</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <script src ="index.js"></script>
+
     <div class="container">
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Sobre mim</a>
                 </li>
-               <li>
-                   <a href="project.html">Projetos</a>
-               </li>
-               <li>
-                   <a href="contact.html">Contato</a>
-               </li>
+                <li>
+                    <a href="#projeto">Projetos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contato</a>
+                </li>
 
-          </ul>
-       </nav> 
-   
-       <header>
-           <div class="center">
-               <img src="./img/Wendy.jpeg"></img>
+            </ul>
+        </nav>
+
+        <header>
+
+            <div class="center">
+                <img src="./img/Wendy.jpeg"></img>
+            </div>
+            <h1 class="center_h1">Wendy Gutierrez</h1>
+
+
+            <h2 class="center_h2">Desenvolvedora de Front-end</h2>
+        </header>
+        <main>
+            <section>
+                <h3>Sobre mim</h3>
+                <p>Me chamo Wendy Gutierrez, sou uma Desenvolvedora dando os primeiros passos no mundo da tecnologia.
+                    Buscando sempre dar o melhor e disposta a aprender algo novo.
+                    <br>Tenho conhecimento e práticas em desenvolvimento Web na parte do front-end que é uma "área" na
+                    qual eu mais me identifico.
+                </p>
+            </section>
+            <section>
+                <h3>Formação</h3>
+                <p>Cursando o curso de Sistema de Informação.
+                </p>
+            </section>
+            <section>
+                <h3>Cursos</h3>
+                <p>HTML, CSS e Javascript.
+                </p>
+            </section>
+
+
+        </main>
+
+        <!-- inicio projeto -->
+        <section id="projeto">
+            <div>
+                <h1 id="titulo">Projetos</h1>
+                <p id="subtitulo">A seguir projetos já realizados:</p>
+                <br>
+            </div>
+
+            <div class="center_projeto">
+                <img src="./img/p1.jpg">
+                <h3>Página Web</h3>
+            </div>
+
+            <div class="center">
+                <img src="./img/p2.jpg">
+                <h3>Desenho Creativo</h3>
+            </div>
+
+            <div class="center">
+                <img src="./img/p5.jpg">
+                <h3>Página Web</h3>
+            </div>
+        </section>
+
+      
+
+        <footer>
+            <div>
+            <a href="https://github.com/wendygutierrez17" target="_blank" rel="noopener noreferrer">
+                <img src="./img/github.svg"></img>
+                <p>Github</p>
+            </a>
+            <a href="https://linkedin.com/in/wendy-gutierrez-978b50156" target="_blank" rel="noopener noreferrer">
+                <img src="./img/linkedin.svg"></img>
+                <p>Linkedin</p>
+
+            </a>
            </div>
-           <h1>Wendy Gutierrez</h1>
-           <h2>Desenvolvedora de Front-end</h2>
-       </header>
-       <main>
-           <section>
-               <h3>Sobre mim</h3>
-               <p>Me chamo Wendy Gutierrez, sou uma Desenvolvedora dando os primeiros passos no mundo da tecnologia. Buscando sempre dar o melhor e disposta a aprender algo novo. 
-            <br>Tenho conhecimento e práticas em desenvolvimento Web na parte do front-end que é uma "área" na qual eu mais me identifico.
-               </p>
-           </section>
-           <section>
-               <h3>Formação</h3>
-               <p>Cursando o curso de Sistema de Informação.
-               </p>
-           </section>
-           <section>
-               <h3>Cursos</h3>
-               <p>HTML, CSS e Javascript.
-               </p>
-           </section>
 
-          
-       </main>
-   
-       <footer>
-           <a href="https://github.com/wendygutierrez17" target="_blank"rel ="noopener noreferrer">
-               <img src="./img/github.svg"></img>
-               <p>Github</p>
-           </a>
-           <a href="https://linkedin.com/in/wendy-gutierrez-978b50156" target="_blank"rel ="noopener noreferrer">
-               <img src="./img/linkedin.svg"></img>
-               <p>Linkedin</p>
-           </a>
-       </footer>
-                
-         
-    </div>
-    
+            <div id="contato">
+                <h2 class="cont">CONTATO</h2>
+                <form class="form">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" />
+                    <textarea cols="30" rows="10" id="menssage" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <input id="button" type="submit" onclick="validar()" value="Enviar" class="button" />
+                </form>
+            </div>
+        </footer>
+
+           <!-- formulario html -->
+           <section id="contac">
+            <h2>Contato</h2>
+            <form action="contact">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required />
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+                <button type="submit" data-button>Enviar</button>
+            </form>
+        </section>
+
+     
 </body>
 
 </html>
